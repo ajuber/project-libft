@@ -31,4 +31,16 @@ putstr		: ecris une string sur la sortie standard
 putstr_fd	: ...............................designe
 strcat		: met une string derriere une autre
 strchr		: retourne le pointeur d'ou est le caractere dans la string 
+strclr		: met a 0 tout les charactere d'une chaine
+strcmp		: compare 2 chaine de charactere
+strcpy		: retiurne la copie d'une chaine de charactere
+strdel		: libere une chaine de caractere (char **as);
+strdup		: alloue une chaine de caractere de la taille de la chaine que lon veut copier puis la copie et la retourne
+strequ		:
+striter		: applique une fonction a chaque caratere d'une chaine
+striteri	: ---------------------------------------------------- avec l'indice du caactere
+strjoin		: alloue une chaine de charactere a la somme des 2 chaine que l'on veut coller l'une apres lautre puis ls joint et retourne cette chaine.
+strlcat		: 
+strlen		: donne la longueur d'une chaine de charactere
+strmap		: 
 
