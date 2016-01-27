@@ -35,7 +35,7 @@ SRC_C=		ft_memset.c		ft_bzero.c		ft_memcpy.c\
 			ft_strsplit.c	ft_putnbr.c		ft_putnbr_fd.c\
 			ft_itoa.c		ft_lstnew.c		ft_lstdelone.c\
 			ft_lstdel.c		ft_lstadd.c		ft_lstiter.c\
-			ft_lstmap.c		ft_lstnew_cpy.c
+			ft_lstmap.c		ft_lstnew_cpy.c	get_next_line.c
 
 SRC_O=$(SRC_C:.c=.o)
 
@@ -46,7 +46,7 @@ $(NAME): $(SRC_O)
 	ranlib $(NAME)
 
 %.o: %.c
-	$(COMPILER) $(FLAGS) $(INCLUDES) $< 
+	$(COMPILER) $(FLAGS) $(INCLUDES) $<
 
 clean: 
 	rm -rf $(SRC_O)

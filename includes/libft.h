@@ -13,6 +13,7 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# include "get_next_line.h"
 
 typedef struct		s_list
 {
@@ -80,5 +81,6 @@ void				ft_lstadd(t_list **lst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_lstnew_cpy(void const *content, size_t content_size);
+int					get_next_line(int const fd, char **line);
 
 #endif
